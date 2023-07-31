@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RSP</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="score">
+        <div class="box">
+          <div class="playerScore">
+            <h2>Player</h2>
+            <p class="p-count count">0</p>
+          </div>
+          <div class="computerScore">
+            <h2>Computer</h2>
+            <p class="c-count count">0</p>
+          </div>
+        </div>
+        <div class="finalScore"><h3>Final Score</h3></div>
+      </div>
+
+      <div class="result"></div>
+      <div class="left">
+        <div class="name"><h1>Computer</h1></div>
+        <div class="hand-image">
+          <img class="animate computer-rock" src="/images/playerrock.png" />
+          <img class="animate computer-paper" src="/images/playerpaper.png" />
+          <img
+            class="animate computer-scissor"
+            src="/images/playerscissor.png"
+          />
+        </div>
+      </div>
+      <div class="right">
+        <div class="name"><h1>You</h1></div>
+        <div class="hand-image">
+          <img class="animate player-rock" src="/images/playerrock.png" />
+          <img class="animate player-paper" src="/images/playerpaper.png" />
+          <img class="animate player-scissor" src="/images/playerscissor.png" />
+        </div>
+        <div class="choices">
+          <button data-choice="Rock" class="user-selection">Rock</button>
+          <button data-choice="Paper" class="user-selection">Paper</button>
+          <button data-choice="Scissor" class="user-selection">Scissor</button>
+          <div>
+            <button class="reset"><h4>RESTART</h4></button>
+            <button data-choice="random" class="user-selection faith">
+              <h3 data-choice="random">I FEEL LUCKY</h3>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./rsp.js"></script>
+  </body>
+</html>
